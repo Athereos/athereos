@@ -1,26 +1,27 @@
 import React from "react";
 import CarWidget from "./CarWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () =>{
     return(
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">ATHEREOS</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <Link to="/" className="nav-link"><div className="navbar-brand">ATHEREOS</div></Link>
+                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li className="nav-item active">
+                    <Link to="/" className="nav-link"> Inicio</Link>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Productos</a>
+                <li className="nav-item active">
+                    <Link to="/category/anillo" className="nav-link"> Anillos</Link>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Nosotros</a>
+                <li className="nav-item active">
+                    <Link to="/category/collar" className="nav-link"> Collares</Link>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Contacto</a>
+                <li className="nav-item active">
+                    <Link to="/category/brazalete" className="nav-link"> Brazaletes</Link>
                 </li>
                 </ul>
                <CarWidget/>
