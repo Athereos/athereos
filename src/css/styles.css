@@ -36,6 +36,8 @@
     flex-wrap: wrap;
   }
 
+
+
   .item{
     width: 400px;
     margin-bottom: 150px;
@@ -62,4 +64,21 @@
   .centrado{
     text-align: center;
     width: 100%;
+  }
+
+  .marginTop10{
+    margin-top: 10px;
+  }
+
+  .scroll{
+    overflow-y: scroll; /* Show vertical scrollbar */
+    height: 70vh;
+  }
+
+  .informacion{
+    padding: 70px;
+  }
+
+  .fullscreen{
+    max-height: 70vh;
   }
